@@ -1,0 +1,74 @@
+.NavBar {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.NavBar-title {
+  text-align: left;
+}
+
+@media screen and (min-device-width: 481px) {
+  .NavBar-title {
+    text-align: center;
+  }
+}
+
+.NavBar-links {
+  overflow: auto;
+  margin-top: 1rem;
+
+  white-space: nowrap;
+  text-align: center;
+}
+
+.NavBar-link {
+  position: relative;
+  display: inline-block;
+  padding: .75rem;
+  color: inherit;
+
+  font-weight: 300;
+  font-size: .875rem;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.NavBar-link:hover {
+  opacity: .75;
+}
+
+.NavBar-link:first-child {
+  padding-left: 0;
+}
+
+.NavBar-link:last-child {
+  padding-right: 0;
+}
+
+.NavBar-link:after {
+  display: block;
+  width: 0;
+  height: 2px;
+  margin: .25rem auto;
+
+  content: '';
+
+  background-color: transparent;
+  transition: all .15s;
+}
+
+.NavBar-link.selected {
+  color: #53A0FD;
+}
+
+.NavBar-link.selected:after {
+  width: 100%;
+  background-color: #53A0FD;
+}
+
+.NavBar-locales {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

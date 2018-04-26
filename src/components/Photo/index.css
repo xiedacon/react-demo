@@ -1,0 +1,8 @@
+.PhotoMeta {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.PhotoMeta > * {
+  margin-right: 1rem;
+}

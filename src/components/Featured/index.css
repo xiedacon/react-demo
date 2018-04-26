@@ -1,0 +1,40 @@
+.ThumbnailCollection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Thumbnail {
+  flex: 1;
+  flex-basis: 8rem;
+  background-color: #EAEAEA;
+  box-sizing: border-box;
+  min-width: 8rem;
+  min-height: 8rem;
+
+  border: 1px solid #FFF;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  transition: filter .25s;
+}
+
+.Thumbnail:nth-child(5n) {
+  flex-basis: 14rem;;
+}
+
+.Thumbnail:nth-child(2n+1) {
+  flex-basis: 10rem;;
+}
+
+.Thumbnail:nth-child(7n+4) {
+  flex-basis: 20rem;
+  min-height: 12rem;
+}
+
+.Thumbnail:hover {
+  opacity: .9;
+  filter: brightness(75%);
+}

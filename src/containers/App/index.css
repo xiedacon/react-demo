@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 60rem;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.App-body {
+  flex: 1;
+}

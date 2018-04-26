@@ -1,10 +1,14 @@
 {
   "name": "react-demo",
   "version": "0.0.1",
-  "description": "",
+  "description": "A demo for react.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test-style && echo 'test finish'",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test-react": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "test": "npm run test-style && npm run test-react && echo 'test finish'",
     "test-style": "./node_modules/standard/bin/cmd.js | ./node_modules/snazzy/bin/cmd.js"
   },
   "repository": {
@@ -18,8 +22,19 @@
     "url": "https://github.com/xiedacon/react-demo/issues"
   },
   "homepage": "https://github.com/xiedacon/react-demo#README.md",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
   "devDependencies": {
     "snazzy": "^7.0.0",
     "standard": "^10.0.3"
+  },
+  "standard": {
+    "ignore": [
+      "/src/registerServiceWorker.js"
+    ]
   }
 }
